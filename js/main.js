@@ -1,10 +1,11 @@
-const colors=["yellow","red","blue","orange"];
+const colors=["Yellow","Red","Blue","Orange"];
 const btn=document.getElementById("btn");
-const box=document.querySelector(".box")
-
+const box=document.querySelector(".box");
+const text=document.querySelector(".text");
 btn.addEventListener('click',function(){
         const number=random();
         box.style.backgroundColor=colors[number];
+        text.textContent = colors[number];
 });
 
 function random(){
